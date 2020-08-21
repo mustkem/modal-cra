@@ -2,10 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Development
 ### Redux
-This package is used for state management
+This package is used for state management.
+Make a consistant flow for redux. Use ducks.
 
 ### Redux saga
-This package used for async actions
+This package used for async actions.
 
 ### Immer
 Managing immutability in redux
