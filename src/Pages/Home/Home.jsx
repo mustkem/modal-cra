@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 
-function Home(props) {
+function Home() {
   return (
     <div className="home-content main-content">
       <div className="container">test</div>
