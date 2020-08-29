@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./assets/style/index.scss";
 
 import { Provider } from "react-redux";
-import { appStore } from "./store/store";
+import appStore from "./store/store";
 
 import Layout from "./Components/Layout";
 import About from "./Pages/About";
