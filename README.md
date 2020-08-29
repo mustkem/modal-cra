@@ -1,5 +1,31 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Development
+### Redux
+This package is used for state management.
+Make a consistant flow for redux. Use ducks.
+
+### Redux saga
+This package used for async actions.
+
+### Immer
+Managing immutability in redux
+
+### Axios
+For api requests
+
+### React Bootstrap / Chakra
+For UI
+
+### react-helmet
+For title and styles
+
+### React router
+For routing
+
+## serialize-javascript
+To sanatise the html sent by server. And to nullify the XSS attacks
+
 ## Available Scripts
 
 In the project directory, you can run:
