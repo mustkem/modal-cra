@@ -9,6 +9,7 @@ import appStore from "./store/store";
 import Layout from "./Components/Layout";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
+import ModalForm from "./Pages/ModalForm";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
               </Route>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/modal-form">
+                <ModalForm />
               </Route>
             </Switch>
           </Layout>
