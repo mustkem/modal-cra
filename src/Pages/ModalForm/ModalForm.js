@@ -34,19 +34,25 @@ function ModalForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("before", formData);
-
+    const newFormData = { ...formData };
     // //touch true //
-    Object.keys(formData).forEach((key) => {
+    Object.keys(newFormData).forEach((key) => {
       formData[key].touched = true;
     });
 
-    console.log(formData);
+    setFormData(newFormData);
 
-    // setFormData(formData);
+    let isFormValid = true;
+    Object.keys(newFormData).every((key) => {
+      isFormValid = isFormValid * formData[key].valid;
+      if (!isFormValid) return false;
+      else return true;
+    });
+
+    if (isFormValid) {
+      //call action
+    }
   };
-
-  console.log("updated", formData);
 
   return (
     <div className="home-content main-content">
