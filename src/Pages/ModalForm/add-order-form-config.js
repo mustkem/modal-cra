@@ -7,6 +7,11 @@ export default {
     touched: false,
     validation: {
       required: true,
+      // number: true,
+      // mobileNumber: true,
+      // minLength: 3,
+      // maxLength: 10,
+      // email: true,
     },
   },
   m_number: {
@@ -16,8 +21,7 @@ export default {
     valid: false,
     touched: false,
     validation: {
-      required: true,
-      mobileNumber: true,
+      number: true,
     },
   },
 };
