@@ -7,11 +7,26 @@ export default {
     touched: false,
     validation: {
       required: true,
-      // number: true,
-      // mobileNumber: true,
-      // minLength: 3,
-      // maxLength: 10,
-      // email: true,
+      minLength: 3,
+      maxLength: 10,
+    },
+  },
+  l_name: {
+    type: "text",
+    name: "l_name",
+    value: "",
+    valid: false,
+    touched: false,
+    validation: {},
+  },
+  number: {
+    type: "text",
+    name: "number",
+    value: "22",
+    valid: false,
+    touched: false,
+    validation: {
+      number: true,
     },
   },
   m_number: {
@@ -21,7 +36,17 @@ export default {
     valid: false,
     touched: false,
     validation: {
-      number: true,
+      mobileNumber: true,
+    },
+  },
+  email: {
+    type: "text",
+    name: "email",
+    value: "",
+    valid: false,
+    touched: false,
+    validation: {
+      email: true,
     },
   },
 };

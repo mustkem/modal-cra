@@ -6,6 +6,7 @@ import InitialFormData from "./add-order-form-config";
 import { checkValidity } from "../../helpers/utility";
 
 import InputBox from "../../Components/InputBox";
+import { Container, Row, Col } from "reactstrap";
 
 function ModalForm() {
   const [formData, setFormData] = useState(() => InitialFormData);
@@ -57,26 +58,52 @@ function ModalForm() {
   return (
     <div className="home-content main-content">
       <div className="container">
-        <h1>Modal Form</h1>
+        <h1>Modal Form 1</h1>
         <div className="modal-form">
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <div className="ip-field-wrp">
-                <label>First Name</label>
-                <InputBox
-                  {...formData["f_name"]}
-                  onChange={handleChangeFormField}
-                  placeholder="Enter"
-                />
-              </div>
-              <div className="ip-field-wrp">
-                <label>Mobile Number</label>
-                <InputBox
-                  {...formData["m_number"]}
-                  onChange={handleChangeFormField}
-                  placeholder="Enter"
-                />
-              </div>
+              <Row>
+                <Col xs="6">
+                  <label>First Name (Min Length - 3, Max Length - 10)</label>
+                  <InputBox
+                    {...formData["f_name"]}
+                    onChange={handleChangeFormField}
+                    placeholder="Enter"
+                  />
+                </Col>
+                <Col xs="6">
+                  <label>Last Name (Optional)</label>
+                  <InputBox
+                    {...formData["l_name"]}
+                    onChange={handleChangeFormField}
+                    placeholder="Enter"
+                  />
+                </Col>
+                <Col xs="6">
+                  <label>Mobile Number (10 Digits)</label>
+                  <InputBox
+                    {...formData["m_number"]}
+                    onChange={handleChangeFormField}
+                    placeholder="Enter"
+                  />
+                </Col>
+                <Col xs="6">
+                  <label>Email</label>
+                  <InputBox
+                    {...formData["email"]}
+                    onChange={handleChangeFormField}
+                    placeholder="Enter"
+                  />
+                </Col>
+                <Col xs="6">
+                  <label>Number </label>
+                  <InputBox
+                    {...formData["number"]}
+                    onChange={handleChangeFormField}
+                    placeholder="Enter"
+                  />
+                </Col>
+              </Row>
             </div>
             <div>
               <button type="submit">Submit</button>

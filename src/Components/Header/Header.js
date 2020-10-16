@@ -21,7 +21,12 @@ function Header() {
             </li>
             <li>
               <NavLink exact to="/modal-form">
-                Modal Form
+                Modal Form 1
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/modal-form-2">
+                Modal Form 2
               </NavLink>
             </li>
           </ul>
