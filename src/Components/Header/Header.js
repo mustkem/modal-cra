@@ -29,6 +29,11 @@ function Header() {
                 Modal Form 2
               </NavLink>
             </li>
+            <li>
+              <NavLink exact to="/modal-form-2">
+                Demos
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
