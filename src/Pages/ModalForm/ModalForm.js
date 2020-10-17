@@ -71,7 +71,7 @@ function ModalForm() {
                     placeholder="Enter"
                   />
                 </Col>
-                <Col xs="6">
+                {/* <Col xs="6">
                   <label>Last Name (Optional)</label>
                   <InputBox
                     {...formData["l_name"]}
@@ -102,7 +102,7 @@ function ModalForm() {
                     onChange={handleChangeFormField}
                     placeholder="Enter"
                   />
-                </Col>
+                </Col> */}
               </Row>
             </div>
             <div>
