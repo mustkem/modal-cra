@@ -6,7 +6,7 @@ import InitialFormData from "./add-order-form-config";
 import { checkValidity } from "../../helpers/utility";
 
 import InputBox from "../../Components/InputBox";
-import { Container, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 function ModalForm() {
   const [formData, setFormData] = useState(() => InitialFormData);
