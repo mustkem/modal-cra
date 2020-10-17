@@ -30,7 +30,7 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink exact to="/modal-form-2">
+              <NavLink exact to="/demos">
                 Demos
               </NavLink>
             </li>
