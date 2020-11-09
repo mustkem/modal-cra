@@ -11,6 +11,12 @@ import Layout from "./Components/Layout";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 import ModalForm from "./Pages/ModalForm";
+import Charts from "./Pages/Charts";
+
+import * as am4core from "@amcharts/amcharts4/core";
+import am4themes_animated from "@amcharts/amcharts4/themes/animated";
+
+am4core.useTheme(am4themes_animated);
 
 function App() {
   return (
@@ -27,6 +33,9 @@ function App() {
               </Route>
               <Route path="/modal-form">
                 <ModalForm />
+              </Route>
+              <Route path="/charts">
+                <Charts />
               </Route>
             </Switch>
           </Layout>

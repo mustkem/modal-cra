@@ -34,6 +34,11 @@ function Header() {
                 Demos
               </NavLink>
             </li>
+            {/* <li>
+              <NavLink exact to="/charts">
+                Charts
+              </NavLink>
+            </li> */}
           </ul>
         </nav>
       </div>
